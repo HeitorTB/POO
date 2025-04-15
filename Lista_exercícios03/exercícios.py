@@ -15,3 +15,16 @@ pi = 3.14159
 raio = int(input("Digite o raio da esfera: "))
 volume = (4/3) * pi * raio**3
 print(format(volume, ".3f"))
+
+#Exercício 4
+C, N = map(int, input("Digite os metros corridos e o tamanho da pista: ").split())
+print(C%N)
+
+#Exercício 5
+import math
+x1, y1 = map(int, input("Digite o valor de x1 e y1: ").split())
+x2, y2 = map(int, input("Digite o valor de x2 e y2: ").split())
+calc= math.sqrt((x2-x1)**2 + (y2 - y1)**2)
+print("{:.4f}".format(calc))
+
+
