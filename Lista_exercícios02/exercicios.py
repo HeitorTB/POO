@@ -1,4 +1,3 @@
-
 #Exercício 1
 nome = input("Digite seu nome completo: ")
 pnome=""
