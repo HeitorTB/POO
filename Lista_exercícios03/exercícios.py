@@ -27,4 +27,10 @@ x2, y2 = map(int, input("Digite o valor de x2 e y2: ").split())
 calc= math.sqrt((x2-x1)**2 + (y2 - y1)**2)
 print("{:.4f}".format(calc))
 
+#Exercício 6
+T1, T2, T3, T4 = map(int, input("Digite 4 números para as respectivas réguas: ").split())
+total_tomadas = (T1 - 1) + (T2 - 1) + (T3 - 1) + T4
+print(total_tomadas)
+
+
 

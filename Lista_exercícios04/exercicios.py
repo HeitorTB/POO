@@ -83,4 +83,66 @@ for i in range(1, 101):
 print(maior)
 print(posicao)
 
-#Exercício 9
+#Exercício 9 
+N = int(input("Digite a quantidade de passos: "))
+contC = 0
+contR = 0
+contS = 0
+contTotal=0
+for c in range (N):
+    entrada = input("Digite a quantidade de cobaias e em seguida o seu tipo: ")
+    qnt, tipo = entrada.split()
+    qnt= int(qnt)
+    contTotal+=qnt
+    if tipo in "Cc":
+        contC+= qnt
+    elif tipo in "Rr":
+        contR+= qnt
+    elif tipo in "Ss": 
+        contS+= qnt
+print("Total: ",contTotal)
+print("Total de coelhos: ",contC)
+print("Total de ratos: ",contR)
+print("Total de sapos: ",contS)
+Percentual_total= contC+contR+contS
+Percentual_coelhos = (100*contC)/Percentual_total
+Percentual_Ratos = (100*contR)/Percentual_total
+Percentual_sapos= (100 * contS) / Percentual_total
+print("Percentual de coelhos: ","{:.2f}".format(Percentual_coelhos))
+print("Percentual de Ratos: ","{:.2f}".format(Percentual_Ratos))
+print("Percentual de sapos: ","{:.2f}".format(Percentual_sapos))
+
+#Exercício 10 
+num = 0 
+while num != 2002:
+    num = int(input("Digite a senha: "))
+    if num != 2002:
+        print("Senha inválida")
+print("Acesso Permitido")
+
+#Exercício 11
+N = int(input("Número: "))
+for _ in range(N):
+    X, Y = map(int, input().split()) 
+    if Y == 0:
+        print("divisao impossivel")
+    else:
+        resultado = X / Y 
+        print(f"{resultado:.1f}")  
+
+#Exercício 12
+N = int(input("Digite um número: "))  
+fibonacci = [0, 1]
+for i in range(2, N):
+    fibonacci.append(fibonacci[i - 1] + fibonacci[i - 2])
+print(*fibonacci[:N])
+    
+
+
+
+    
+
+    
+
+
+
